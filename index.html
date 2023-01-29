@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/style.css" rel="stylesheet">
+  <title>kadai2</title>
+</head>
+
+<body>
+  <h1>Webプログラミング 課題２</h1>
+  <h2>日本大学文理学部情報科学科２年 ５４２１０４９ 伊藤大貴</h2>
+  <p>このページではHTMLの要素の中から３つを選んで説明を行います。</p>
+  <ul>
+    <li><strong>a</strong>要素</li>
+    <li><strong>strong</strong>要素</li>
+    <li><strong>img</strong>要素</li>
+  </ul>
+
+  <ol>
+    <li>
+      <div>
+        <h3>
+          そもそも「要素」とは何か
+        </h3>
+        <p>
+          HTMLにおける「要素」とは、開始タグと終了タグで挟まれたものの全体を指します。<br>
+          例えば、「&lt;p&gt;文章A&lt;/p&gt;」というようにコーディングした場合、
+          開始タグが「&lt;p&gt;」、終了タグが「&lt;/p&gt;」、要素が「&lt;p&gt;文章A&lt;/p&gt;」という事になります。
+        </p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>strong要素</h3>
+        <div>
+          strong要素を使うと、文字を太くすることができます。<br>
+          文字を強調したい場合に有効です。<br>
+          &lt;strong&gt;&lt;/strong&gt;タグで文字を挟むことで強調することができます。<br><br>
+        </div>
+        マークアップ例 : <br>
+        <code>
+          <ul>
+            <li>今日の朝ごはんは&lt;strong&gt;焼肉&lt;/strong&gt;でした。</li>
+            <li>I have a &lt;strong&gt;PEN&lt;/strong&gt;</li>
+          </ul>
+        </code><br>
+        実行結果 :
+        <ul>
+          <li>今日の朝ごはんは<strong>焼肉</strong>でした。</li>
+          <li>I have a <strong>PEN</strong>!</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>img要素</h3>
+        <div>
+          img要素を使うと、Webページに画像を追加することができます。<br>
+          この要素には終了タグが無く、文字列を囲まずに単独で使うのが特徴的です。<br>
+          例 :
+          <code>
+          &lt;img src="画像へのパス" alt="写真の説明"	&gt;<br>
+        </code>
+          画像を表示するには、「どの画像を表示するのか」という場所を指定するsrc属性、「どんな画像なのか」を指定するalt属性の二つを指定する必要があります。<br>
+          src属性にはその画像へのパス、alt属性にはその画像の簡単な説明を記述します。<br><br>
+        </div>
+        マークアップ例 : <br>
+        <code>
+          <ul>
+            <li>&lt;img src="./images/apple.JPG" alt="Apple"	&gt;</li>
+            <li>&lt;img src="./images/pineapple.JPG" alt="Pineapple"	&gt;</li>
+          </ul>
+        </code><br>
+        実行結果 : <br>
+        <ul>
+          <li><img src="./images/apple.JPG" alt="Apple"></li><br>
+          <li><img src="./images/pineapple.JPG" alt="Pineapple"></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>a要素</h3>
+        <div>
+        a要素を使うと、他のWebページへのURLを貼り付けることができます。<br>
+        例 : &lt;a href="表示したいWebページのURL"&gt;URLにしたい文字など&lt;/a&gt;<br>
+        href属性には、表示したいWebページのURLを記述し、開始タグと終了タグの間に、URLにしたい文字などを入れます。
+        先に説明したimg要素を入れることで、画像にURLを埋め込むこともできます。<br><br>
+      </div>
+        マークアップ例 : <br>
+        <code>
+          <ul>
+            <li>&lt;a href="https://www.nintendo.co.jp/"&gt;任天堂ホームページ&lt;/a&gt;</li>
+            <li>&lt;a href="https://portal.educ.chs.nihon-u.ac.jp/"&gt;&lt;img src="./images/CHS.jpg" alt="文理学部ポータルサイト"&gt;&lt;/a&gt;</li>
+          </ul>
+        </code><br>
+        実行結果 : <br>
+        <ul>
+          <li><a href="https://www.nintendo.co.jp/">任天堂ホームページ</a></li>
+          <li><a href="https://portal.educ.chs.nihon-u.ac.jp/"><img src="./images/CHS.jpg" alt="文理学部ポータルサイト"></a></li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+
+  <h2>引用</h2>
+  <p><a href="https://www.nintendo.co.jp/">任天堂ホームページ</a></p>
+  <p><a href="https://portal.educ.chs.nihon-u.ac.jp/">文理学部ポータルサイト</a></p>
+</body>
+
+</html>
